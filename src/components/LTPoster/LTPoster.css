@@ -1,0 +1,28 @@
+.LT__Desc--poster {
+  display: flex;
+  padding-top: 20px;
+}
+.LT__Desc--poster div {
+  width: calc(33.33% - 30px);
+  margin: 15px;
+}
+.LT__Desc--poster div p {
+  padding-bottom: 15px;
+  font-weight: bold;
+}
+.LT__Desc--poster div img {
+  width: 100%;
+  height: 350px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 550px) {
+  .LT__Desc--poster {
+    flex-flow: row wrap;
+  }
+  .LT__Desc--poster div {
+    width: calc(100% - 30px);
+    margin: 15px;
+  }
+}

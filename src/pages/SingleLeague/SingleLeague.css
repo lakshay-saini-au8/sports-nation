@@ -1,0 +1,58 @@
+.SLeague__Desc {
+  display: flex;
+  padding: 30px;
+  flex-direction: column;
+}
+
+.SLeague__Desc .SLeague__Desc--fd {
+  width: 100%;
+  margin: 15px;
+}
+.SLeague__Desc .SLeague__Desc--fd .SL__D--name {
+  font-size: 40px;
+}
+
+.SLeague__Desc .SLeague__Desc--fd .SL__D--iH {
+  display: flex;
+  align-items: center;
+  padding-top: 16px;
+  font-size: 14px;
+  color: #8a00d8;
+}
+.SLeague__Desc .SLeague__Desc--fd .SL__D--iH p {
+  margin-right: 24px;
+}
+.SLeague__Desc .SLeague__Desc--fd .SL__D--iH p span {
+  font-weight: bold;
+  padding-right: 7px;
+  color: #fff;
+}
+
+.SLeague__Desc .SLeague__Desc--teams {
+  margin: 15px;
+}
+
+.SLeague__Desc .SLeague__Desc--teams .SLeague__Desc--teamsH {
+  font-size: 25px;
+  box-shadow: inset 0px -6px 0px -1px #8a00da;
+  display: flex;
+  padding: 5px;
+  width: 96px;
+  position: relative;
+  margin-bottom: 16px;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 550px) {
+  .SLeague__Desc .SLeague__Desc--fd .SL__D--iH {
+    flex-direction: column;
+    align-items: start;
+  }
+  .SLeague__Desc .SLeague__Desc--fd .SL__D--iH p {
+    margin-bottom: 5px;
+  }
+  .SLeague__Desc .SLeague__Desc--fd .SL__D--name {
+    font-size: 30px;
+  }
+}

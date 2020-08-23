@@ -1,0 +1,23 @@
+.SLeague__head {
+  height: 268px;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: 100% 262px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  align-items: center;
+  box-shadow: inset -2px -49px 26px -10px #0f0c29;
+  background-attachment: fixed;
+}
+.SocialIcon {
+  position: absolute;
+  bottom: 30px;
+  right: 17px;
+}
+.SocialIcon .SocialIcon__btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 94%;
+  margin: 7px;
+}

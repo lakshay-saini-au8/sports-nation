@@ -1,0 +1,61 @@
+.SportCard {
+  width: 25%;
+  position: relative;
+  display: flex;
+  /* transition: all 0.3s ease; */
+}
+@media screen and (max-width: 800px) {
+  .SportCard {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .SportCard {
+    width: 100%;
+  }
+}
+.SportCard:hover .SportCard__image img {
+  transform: scale(1.3);
+}
+.SportCard__image {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+}
+.SportCard__image:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #00000033;
+}
+
+.SportCard__image img {
+  width: 100%;
+  display: block;
+  transition: all 0.3s ease;
+}
+.SportCard__title {
+  position: absolute;
+  top: 50%;
+  color: white;
+  font-size: 20px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  white-space: pre;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.SportCard:hover .SportCard__title {
+  background-color: #8a00d8;
+  padding: 7px;
+  border-radius: 5px;
+}
+@media screen and (max-width: 450px) {
+  .SportCard__title {
+    background-color: #8a00d8;
+    padding: 7px;
+    border-radius: 5px;
+  }
+}

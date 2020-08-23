@@ -1,0 +1,23 @@
+.LTEvent__Desc--up {
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: self-start;
+}
+
+.LTEvent__Desc--up .LTEvent__Desc--upH {
+  font-size: 25px;
+  box-shadow: inset 0px -6px 0px -1px #8a00da;
+  display: flex;
+  padding: 5px;
+  position: relative;
+  margin-bottom: 16px;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 550px) {
+  .LTEvent__Desc--up {
+    align-items: normal;
+  }
+}

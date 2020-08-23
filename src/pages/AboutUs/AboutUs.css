@@ -1,0 +1,27 @@
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 80px);
+}
+
+@media screen and (max-width: 550px) {
+  .about {
+    margin-bottom: 69px;
+  }
+}
+.about-this-website {
+  width: 70%;
+  text-align: center;
+}
+
+.heading {
+  padding: 25px;
+}
+
+.all-about {
+  text-align: center;
+}
+.all-about > p {
+  padding: 7px;
+}

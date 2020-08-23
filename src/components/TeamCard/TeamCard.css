@@ -1,0 +1,57 @@
+.TeamCard {
+  width: calc(25% - 20px);
+  padding: 10px;
+  background: #231f4e;
+  margin: 10px;
+  color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  animation-name: fadeOut;
+  animation-duration: 3s;
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .TeamCard {
+    width: calc(33.33% - 20px);
+  }
+}
+@media screen and (max-width: 750px) {
+  .TeamCard {
+    width: calc(50% - 20px);
+  }
+}
+@media screen and (max-width: 550px) {
+  .TeamCard {
+    width: calc(100% - 20px);
+  }
+}
+.TeamCard:hover {
+  background: #50067e;
+  color: #fff;
+}
+.TeamCard .TeamImage {
+  padding-bottom: 27px;
+}
+.TeamCard .TeamImage img {
+  width: 100%;
+}
+
+.TeamCard .TeamTitle {
+  padding-bottom: 13px;
+  font-weight: bold;
+  font-size: 14px;
+}

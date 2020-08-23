@@ -1,0 +1,48 @@
+.back {
+  min-width: 100vw;
+  min-height: 100vh;
+  background: #0f0c29;
+}
+
+.LeagueHead {
+  padding: 20px 55px;
+  padding-bottom: 0;
+  display: flex;
+  align-items: center;
+  animation-name: fadeOut;
+  animation-duration: 3s;
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100;
+  }
+}
+
+.LeagueHead .LeagueHead__sport {
+  background: #8a00d8;
+  padding: 5px 10px;
+  margin-right: 26px;
+  border-radius: 5px;
+}
+.LeagueHead .LeagueHead__country {
+  background: #8a00d8;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.LeagueCard__Wapper {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 45px;
+}
+
+@media screen and (max-width: 550px) {
+  .LeagueCard__Wapper {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 30px;
+  }
+}

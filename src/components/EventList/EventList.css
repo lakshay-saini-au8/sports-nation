@@ -1,0 +1,61 @@
+.Event {
+  display: flex;
+  align-items: center;
+  margin-left: 16px;
+  transition: all 0.3s ease;
+  padding: 10px 20px;
+  font-size: 14px;
+  border-radius: 5px;
+  margin-bottom: 13px;
+}
+
+.Event:nth-child(2n + 1) {
+  background: #fff;
+  color: #8a00da;
+}
+.Event:nth-child(2n) {
+  background: #8a00da;
+  color: #fff;
+}
+.Event:nth-child(2n) .Event__team a {
+  color: #fff;
+}
+.Event:nth-child(2n) .Event__team a:hover {
+  text-decoration: underline;
+}
+.Event:nth-child(2n + 1) .Event__team a {
+  color: #8a00da;
+}
+.Event:nth-child(2n + 1) .Event__team a:hover {
+  text-decoration: underline;
+}
+.Event:hover {
+  background: #000000;
+}
+.Event .Event__date {
+  margin-right: 19px;
+}
+.Event .Event__team {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+
+.Event .Event__team .Event__team--home {
+  margin-right: 15px;
+}
+
+.Event .Event__team .Event__team--score {
+  display: flex;
+  margin-right: 15px;
+  align-items: center;
+  font-weight: 100;
+}
+
+@media screen and (max-width: 550px) {
+  .Event {
+    font-size: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

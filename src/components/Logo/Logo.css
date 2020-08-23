@@ -1,0 +1,19 @@
+.Logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Logo .Logo__sport {
+  background: #fff;
+  color: #8a00d8;
+  padding: 5px 15px;
+  font-size: 25px;
+  border-radius: 5px 0px 0px 5px;
+}
+.Logo .Logo__nation {
+  background: #8a00d8;
+  color: #fff;
+  padding: 5px 15px;
+  font-size: 25px;
+  border-radius: 0px 5px 5px 0px;
+}

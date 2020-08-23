@@ -1,0 +1,18 @@
+.LT__Desc--full {
+  margin: 15px;
+}
+.LT__Desc--full .LT__Desc--fullH {
+  font-size: 25px;
+  box-shadow: inset 0px -6px 0px -1px #8a00da;
+  display: flex;
+  padding: 5px;
+  width: 162px;
+  position: relative;
+  margin-bottom: 16px;
+  font-weight: bold;
+  border-radius: 10px;
+}
+.LT__Desc--full .LT__Desc--fullD {
+  font-size: 14px;
+  line-height: 1.6;
+}

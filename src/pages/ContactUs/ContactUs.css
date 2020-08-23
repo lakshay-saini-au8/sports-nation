@@ -1,0 +1,158 @@
+.contact {
+  color: #fff;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: calc(100vh - 80px);
+  flex-direction: column;
+  text-align: left;
+}
+
+.info {
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  text-align: left;
+}
+
+.profile-card {
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.095);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  margin: 40px;
+  background: #231f4e;
+  width: 380px;
+  height: 430px;
+}
+
+.profile-name {
+  font-size: 25px;
+}
+
+.information {
+  margin: 20px 35px;
+  letter-spacing: 2px;
+}
+
+.linkedin {
+  width: 70px;
+  height: 70px;
+}
+
+.akshat-img {
+  margin: 20px;
+  width: 40%;
+  border-radius: 50%;
+}
+
+.lakshay-img {
+  margin: 20px;
+  width: 38%;
+  border-radius: 50%;
+}
+
+.Contact-us {
+  font-size: 50px;
+  font-weight: 400;
+  text-align: center;
+}
+
+@media screen and (max-width: 950px) {
+  .profile-card {
+    width: 300px;
+    height: 430px;
+  }
+}
+@media screen and (max-width: 760px) {
+  .profile-card {
+    width: 200px;
+    height: 350px;
+  }
+}
+@media screen and (max-width: 570px) {
+  .info {
+    flex-direction: column;
+  }
+  .profile-card {
+    width: 250px;
+    height: 350px;
+  }
+}
+
+/* @media screen and (max-width: 900px) {
+  .contact {
+    display: flex;
+    align-items: center;
+    width: 88%;
+  }
+
+  .info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 50px;
+  }
+
+  .Contact-us {
+    margin-top: 30px;
+    font-size: 40px;
+    font-weight: 400;
+  }
+
+  .profile-card {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .contact {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 95%;
+  }
+
+  .info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 150px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .contact {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 75%;
+  }
+
+  .info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 150px;
+  }
+
+  .Contact-us {
+    margin-top: 30px;
+    font-size: 40px;
+    font-weight: 400;
+  }
+
+  .profile-card {
+    width: 300px;
+  }
+} */

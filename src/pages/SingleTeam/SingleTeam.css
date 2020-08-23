@@ -1,0 +1,56 @@
+.Team__Desc {
+  display: flex;
+  padding: 30px;
+  flex-direction: column;
+}
+.Team__Desc .Team__Desc--fd {
+  width: 100%;
+  margin: 15px;
+}
+.Team__Desc .Team__Desc--fd .TD__D--name {
+  font-size: 40px;
+}
+
+.Team__Desc .Team__Desc--fd .TD__D--iH {
+  display: flex;
+  align-items: center;
+  padding-top: 16px;
+  font-size: 14px;
+  color: #8a00d8;
+}
+.Team__Desc .Team__Desc--fd .TD__D--iH p {
+  margin-right: 24px;
+}
+.Team__Desc .Team__Desc--fd .TD__D--iH p span {
+  font-weight: bold;
+  padding-right: 7px;
+  color: #fff;
+}
+
+@media screen and (max-width: 550px) {
+  .Team__Desc .Team__Desc--fd .TD__D--iH {
+    flex-direction: column;
+    align-items: start;
+  }
+  .Team__Desc .Team__Desc--fd .TD__D--iH p {
+    margin-bottom: 5px;
+  }
+  .Team__Desc .Team__Desc--fd .TD__D--name {
+    font-size: 30px;
+  }
+  .Team__Desc .Team__Desc--poster {
+    flex-flow: row wrap;
+  }
+
+  .Team__Desc .Team__Desc--poster div {
+    width: calc(100% - 30px);
+    margin: 15px;
+  }
+
+  .Team__Desc .Team__Desc--up {
+    align-items: normal;
+  }
+  .Team__Desc .Team__Desc--last {
+    align-items: normal;
+  }
+}

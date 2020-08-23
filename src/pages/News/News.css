@@ -1,0 +1,33 @@
+.NewsCategory {
+  display: flex;
+  overflow: auto;
+  margin: 0px 51px;
+  align-items: center;
+}
+.NewsCategory::-webkit-scrollbar {
+  width: 6px;
+  height: 10px;
+}
+.NewsCategory::-webkit-scrollbar-track {
+  border-radius: 50px;
+}
+
+.NewsCategory::-webkit-scrollbar-thumb {
+  background: #8a00d8;
+}
+
+.NewsCard__Wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 45px;
+}
+
+@media screen and (max-width: 550px) {
+  .NewsCategory {
+    margin: 0px 23px;
+  }
+  .NewsCard__Wrapper {
+    margin: 15px;
+    margin-top: 30px;
+  }
+}

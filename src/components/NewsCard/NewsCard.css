@@ -1,0 +1,98 @@
+.NewsCard {
+  width: calc(25% - 20px);
+  margin: 10px;
+  background: #fff;
+  color: #000;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.NewsCard:hover .NewsCard__img img {
+  transform: scale(1.2);
+}
+.NewsCard .NewsCard__img {
+  position: relative;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.NewsCard .NewsCard__img img {
+  width: 100%;
+  border-radius: 5px;
+  height: 150px;
+  transition: all 0.3s ease;
+}
+
+.NewsCard .NewsCard__img .NewsCard__img--tag {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: rgb(15 12 41);
+  padding: 5px 9px;
+  margin: 5px;
+  border-radius: 5px;
+  color: rgb(0, 247, 65);
+  font-size: 11px;
+  font-weight: bold;
+}
+.NewsCard .NewsCard__body {
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: self-end;
+}
+
+.NewsCard .NewsCard__body p.NewsCard__body--date {
+  padding-bottom: 7px;
+  font-weight: 900;
+  background: #0f0c29;
+  padding: 5px 9px;
+  margin-bottom: 13px;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 9px;
+  font-weight: bold;
+}
+.NewsCard .NewsCard__body p.NewsCard__body--author {
+  font-size: 20px;
+  word-break: break-word;
+}
+.NewsCard .NewsCard__body p.NewsCard__body--title {
+  font-size: 14px;
+  padding: 10px 0;
+  padding-bottom: 0;
+}
+.NewsCard .NewsCard__body p.NewsCard__body--read {
+  display: flex;
+  background: #8a00da;
+  border: 1px solid #8a00da;
+  align-items: center;
+  padding: 5px 10px;
+  border-radius: 5px;
+  justify-content: center;
+  cursor: pointer;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+.NewsCard .NewsCard__body p.NewsCard__body--read:hover {
+  background: #fff;
+  color: #8a00da;
+}
+
+@media screen and (max-width: 1000px) {
+  .NewsCard {
+    width: calc(33.33% - 20px);
+  }
+}
+@media screen and (max-width: 750px) {
+  .NewsCard {
+    width: calc(50% - 20px);
+  }
+}
+@media screen and (max-width: 550px) {
+  .NewsCard {
+    width: calc(100% - 20px);
+  }
+}

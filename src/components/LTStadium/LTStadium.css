@@ -1,0 +1,25 @@
+.LTStadium__Desc--up {
+  margin: 15px;
+}
+.LTStadium__Desc--up .LTStadium__Desc--upH {
+  font-size: 25px;
+  box-shadow: inset 0px -6px 0px -1px #8a00da;
+  display: flex;
+  padding: 5px;
+  width: 122px;
+  position: relative;
+  margin-bottom: 16px;
+  font-weight: bold;
+  border-radius: 10px;
+}
+.LTStadium__Desc--up .LTStadium__Desc--upImg img {
+  width: 100%;
+  border-radius: 5px;
+  margin: 15px 0;
+  height: 300px;
+}
+
+.LTStadium__Desc--up .LTStadium__Desc--upD {
+  font-size: 14px;
+  line-height: 1.6;
+}

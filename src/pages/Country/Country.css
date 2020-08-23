@@ -1,0 +1,52 @@
+.CountryWapper {
+  min-width: 100vw;
+  min-height: 100vh;
+  padding: 40px;
+  background: #0f0c29;
+  color: #fff;
+}
+
+.Country__title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.Country__title > p {
+  padding: 5px;
+}
+
+.Country__title .Country__title-s {
+  font-size: 30px;
+  color: #fff;
+  background: #8a00d8;
+  border-radius: 5px;
+  font-weight: 700;
+  padding: 5px;
+  margin: 10px;
+}
+
+.Country__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 40px;
+}
+.Country__list .Country__list--btn {
+  border: 1px solid #fff;
+  background-color: #fff;
+  color: #8a00d8;
+  border-radius: 4px;
+  font-weight: bold;
+  padding: 7px 20px;
+  transition: all 0.3s ease;
+}
+.Country__list .Country__list--btn:hover {
+  border: 1px solid #8a00d8;
+  background-color: #8a00d8;
+  color: #fff;
+}
+.Country__list .Country__list--btn:focus {
+  outline: none;
+}
