@@ -1,16 +1,16 @@
 import React, { Component } from "react";
-import "./AboutUs.css";
 import Logo from "../../components/Logo/Logo";
+import { AboutWrapper, AllAbout, AboutHead } from "./About.style";
 
 class AboutUs extends Component {
   render() {
     return (
       <>
         <Logo />
-        <div className="about">
+        <AboutWrapper>
           <div className="about-this-website">
-            <h1 className="heading">About This Website</h1>
-            <div className="all-about">
+            <AboutHead>About This Website</AboutHead>
+            <AllAbout>
               <p>
                 Sports Nation website gives the information about Sports and
                 sports related news.
@@ -31,9 +31,9 @@ class AboutUs extends Component {
                 In sports news section we can see all the trending sports news
                 related to the particular sports.
               </p>
-            </div>
+            </AllAbout>
           </div>
-        </div>
+        </AboutWrapper>
       </>
     );
   }
