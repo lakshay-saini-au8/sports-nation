@@ -27,13 +27,13 @@ export const getTeamDetails = (teamId) => async (dispatch) => {
     dispatch(fetchTeamDetails());
     const team = axios.get(`${API_KEY}/lookupteam.php?id=${teamId}`);
     const lastEvent = axios.get(`${API_KEY}/eventslast.php?id=${teamId}`);
-    const nextEvent = axios.get(`${API_KEY}/eventsnext.php?id=${teamId}`);
+    // const nextEvent = axios.get(`${API_KEY}/eventsnext.php?id=${teamId}`);
 
-    const data = await axios.all([team, lastEvent, nextEvent]);
+    const data = await axios.all([team, lastEvent]);
 
     dispatch(setTeamDetails(data[0].data.teams));
     dispatch(setTeamDetailsLastEvent(data[1].data.results));
-    dispatch(setTeamDetailsNextEvent(data[2].data.events));
+    // dispatch(setTeamDetailsNextEvent(data[2].data.events));
   } catch (error) {
     alert(
       `There is some technical problem please inform at: lakshaysaini2013@gmail.com ${error}`

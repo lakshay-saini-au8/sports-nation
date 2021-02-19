@@ -25,7 +25,7 @@ class SingleTeam extends Component {
   componentWillUnmount() {
     this.props.setTeamDetails("");
     this.props.setTeamDetailsLastEvent("");
-    this.props.setTeamDetailsNextEvent("");
+    // this.props.setTeamDetailsNextEvent("");
   }
   render() {
     return this.props.team === null ? (
@@ -106,10 +106,10 @@ class SingleTeam extends Component {
               this.props.team[0].strDescriptionEN || "DESCRIPTION NA"
             }
           />
-          <LTEvent
+          {/* <LTEvent
             event={this.props.upcomingEvent}
             eventType="Upcoming Event"
-          />
+          /> */}
           <LTEvent event={this.props.lastEvent} eventType="Last Event" />
           <LTStadium
             image={this.props.team[0].strStadiumThumb}

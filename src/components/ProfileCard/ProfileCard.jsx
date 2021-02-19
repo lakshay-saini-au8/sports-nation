@@ -11,13 +11,15 @@ const ProfileCard = ({ img, name, title, link }) => {
       <img src={img} alt={name} />
       <ProfileName>{name}</ProfileName>
       <ProfileTitle>{title}</ProfileTitle>
-      <ProfileLink to={link}>
-        <img
-          src={require("../../assets/img/icons8-linkedin-480.png")}
-          alt="Linkedin-profile"
-          className="linkedin"
-        />
-      </ProfileLink>
+      <a href={link} target="_blank" rel="noopener noreferrer">
+        <ProfileLink>
+          <img
+            src={require("../../assets/img/icons8-linkedin-480.png")}
+            alt="Linkedin-profile"
+            className="linkedin"
+          />
+        </ProfileLink>
+      </a>
     </ProfileWrapper>
   );
 };

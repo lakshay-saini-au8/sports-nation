@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { Link } from "react-router-dom";
 
 export const ProfileWrapper = styled.div`
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.095);
@@ -46,7 +45,7 @@ export const ProfileTitle = styled.div`
   letter-spacing: 2px;
 `;
 
-export const ProfileLink = styled(Link)`
+export const ProfileLink = styled.div`
   & img {
     width: 70px;
     height: 70px;

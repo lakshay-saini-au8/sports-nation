@@ -26,7 +26,7 @@ class SingleLeague extends Component {
     this.props.setSingleLeague("");
     this.props.setSingleLeagueTeam("");
     this.props.setSingleLeagueLastEvent("");
-    this.props.setSingleLeagueUpcomingEvent("");
+    // this.props.setSingleLeagueUpcomingEvent("");
   }
   render() {
     return this.props.singleLeague === null ? (
@@ -111,10 +111,10 @@ class SingleLeague extends Component {
             }
           />
 
-          <LTEvent
+          {/* <LTEvent
             event={this.props.upcomingEvent}
             eventType="Upcoming Event"
-          />
+          /> */}
           <LTEvent event={this.props.lastEvent} eventType="LAST Event" />
           <div className="SLeague__Desc--teams">
             <p className="SLeague__Desc--teamsH"> Teams</p>

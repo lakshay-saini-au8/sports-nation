@@ -35,16 +35,16 @@ export const getSingleLeague = (leagueId) => async (dispatch) => {
     const lastEvent = axios.get(
       `${API_KEY}/eventspastleague.php?id=${leagueId}`
     );
-    const upcomingEvent = axios.get(
-      `${API_KEY}/eventsnextleague.php?id=${leagueId}`
-    );
+    // const upcomingEvent = axios.get(
+    //   `${API_KEY}/eventsnextleague.php?id=${leagueId}`
+    // );
 
-    const data = await axios.all([league, team, lastEvent, upcomingEvent]);
+    const data = await axios.all([league, team, lastEvent]);
 
     dispatch(setSingleLeague(data[0].data.leagues));
     dispatch(setSingleLeagueTeam(data[1].data.teams));
     dispatch(setSingleLeagueLastEvent(data[2].data.events));
-    dispatch(setSingleLeagueUpcomingEvent(data[3].data.events));
+    // dispatch(setSingleLeagueUpcomingEvent(data[3].data.events));
   } catch (error) {
     alert(
       `There is some technical problem please inform at: lakshaysaini2013@gmail.com ${error}`
